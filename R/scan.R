@@ -1,9 +1,9 @@
-#' explore
+#' scan
 #' 
 #' @export
 
 
-explore <- function(data) {
+scan <- function(data) {
   chr <- sapply(data,  attr, "label")
   ids <- names(chr)
   names(chr) <- NULL

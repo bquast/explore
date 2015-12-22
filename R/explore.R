@@ -4,9 +4,8 @@
 
 
 explore <- function(data) {
-  chr <- sapply(data,  attr, "label")
-  ids <- names(chr)
-  names(chr) <- NULL
-  chr <- paste('#', chr)
-  data.frame(id = ids, description = chr)
+  description <- sapply(data,  attr, "label")
+  variables    <- names(description)
+  description <- paste('#', description)
+  data.frame(variables, description)
 }

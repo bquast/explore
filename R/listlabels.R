@@ -1,9 +1,8 @@
-#' explore
+#' List Labels
 #' 
 #' @export
 
-
-explore <- function(data) {
+listlabels <- function(data) {
   description <- sapply(data,  attr, "label")
   variables    <- names(description)
   names(description) <- NULL
